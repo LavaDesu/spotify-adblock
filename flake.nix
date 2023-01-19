@@ -4,6 +4,7 @@
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.naersk.url = "github:nix-community/naersk";
   inputs.naersk.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
   outputs = { self, nixpkgs, naersk, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem(system:
