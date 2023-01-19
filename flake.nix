@@ -13,7 +13,7 @@
 
       deps = [];
     in {
-      defaulPackage = naersk'.buildPackage {
+      defaultPackage = naersk'.buildPackage {
         src = ./.;
       };
       devShell = pkgs.mkShell {
